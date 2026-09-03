@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大模型 / 小模型 · 网络架构实验室</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="bg-blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+<nav>
+  <div class="wrap">
+    <span class="logo">网络架构实验室</span>
+    <a href="home.html">知识树</a>
+    <a href="index.html">经典网络</a>
+    <a href="models.html">大模型 / 小模型</a>
+    <a href="evolution.html">演进</a>
+    <a href="faq.html">高频问题</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <span class="pill">Vision-Language · 视觉基础模型</span>
+  <h1>大模型 / 小模型 <span class="g">架构界面</span></h1>
+  <p>按「大小模型」分界面：多模态大模型(VLM) 与 视觉基础小模型 各自成列。点卡片进入详情，上=结构图，下=代码。</p>
+</header>
+
+<div class="wrap">
+  <div class="sec-head">
+    <div class="k">MODEL ZOO</div>
+    <h2>架构库</h2>
+  </div>
+  <div class="filters" id="filters">
+    <span class="chip active" data-group="all">全部</span>
+    <span class="chip" data-group="large">大模型 (VLM)</span>
+    <span class="chip" data-group="small">小模型 (视觉基础)</span>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<footer>网络架构实验室 · 结构图与代码持续补充中（编辑 assets/js/model-data.js）</footer>
+
+<script src="assets/js/model-data.js"></script>
+<script src="assets/js/models.js"></script>
+</body>
+</html>

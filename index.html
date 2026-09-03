@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>网络架构学习 · ArchLab</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<div class="bg-blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+<nav><div class="wrap">
+  <div class="logo">◈ ArchLab</div>
+  <a href="home.html">知识树</a>
+  <a href="index.html">经典网络</a>
+  <a href="models.html">大模型 / 小模型</a>
+  <a href="evolution.html">演进</a>
+  <a href="faq.html">高频问题</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="pill">算法工程师 · 网络架构学习工程</div>
+  <h1>网络架构 <span class="g">ArchLab</span></h1>
+  <p>点击任意架构 → 上看图、下看代码。优先完成 VGG / ResNet / Swin / ViT / RT-DETR，其余待你补充。</p>
+</div></header>
+
+<section><div class="wrap">
+  <div class="sec-head"><div class="k">Library</div><h2>架构库</h2></div>
+  <div class="filters" id="filters">
+    <span class="chip active" data-f="all">全部</span>
+    <span class="chip" data-f="Backbone">Backbone</span>
+    <span class="chip" data-f="轻量">轻量</span>
+    <span class="chip" data-f="检测">检测</span>
+    <span class="chip" data-f="ready">已就绪</span>
+  </div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="guide"><div class="wrap">
+  <div class="sec-head"><div class="k">How to</div><h2>怎么补充内容</h2></div>
+  <div class="card" style="cursor:default">
+    <p>打开 <code>assets/js/arch-data.js</code>：</p>
+    <p>1) 给某个架构补全 <b>diagram</b>（内联 <code>&lt;svg&gt;…&lt;/svg&gt;</code> 或 <code>&lt;img src="assets/diagrams/xxx.svg"&gt;</code>）与 <b>code</b>（纯文本，建议 PyTorch）。</p>
+    <p>2) 想新增架构：在 <code>ARCH</code> 里加一项，并在 <code>ARCH_LIST</code> 数组追加它的 key。</p>
+    <p>3) 刷新页面即可生效，无需构建工具。</p>
+  </div>
+</div></section>
+
+<footer>ArchLab · 静态工程，直接双击 index.html 或本地起服务均可</footer>
+
+<script src="assets/js/arch-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

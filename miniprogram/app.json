@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "ArchLab",
+    "navigationBarBackgroundColor": "#0a0e16",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0a0e16"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.webview": {
+      "desc": "用于在小程序内展示 ArchLab 知识库网页"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "description": "ArchLab 小程序套壳（web-view 指向已部署的静态站）",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false,
+    "newFeature": true,
+    "bigPackageSizeSupport": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.0.0",
+  "appid": "touristappid",
+  "projectname": "archlab-miniprogram",
+  "miniprogramRoot": "./",
+  "condition": {}
+}

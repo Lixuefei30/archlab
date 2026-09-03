@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>模型详情 · 网络架构实验室</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="bg-blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+<nav>
+  <div class="wrap">
+    <span class="logo">网络架构实验室</span>
+    <a href="home.html">知识树</a>
+    <a href="evolution.html">演进</a>
+    <a href="index.html">经典网络</a>
+    <a href="models.html">大模型 / 小模型</a>
+    <a href="faq.html">高频问题</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="detail-hero">
+    <a class="back" href="models.html">← 返回架构库</a>
+    <h1 id="title"></h1>
+    <div class="meta" id="meta"></div>
+    <p class="lead" id="lead"></p>
+  </div>
+
+  <div class="block">
+    <h2><span class="bar"></span>模型身份证</h2>
+    <div class="hint">一张卡片速记：任务 / 解决问题 / 核心思想 / 输入 / 输出 / 参数量 / FLOPs / 优缺点</div>
+    <div id="idcard"></div>
+  </div>
+
+  <div class="block">
+    <h2><span class="bar"></span>结构图</h2>
+    <div class="hint">架构数据流示意（你可用自己的图替换 diagram 字段）</div>
+    <div class="diagram-box" id="diagram"></div>
+  </div>
+
+  <div class="block">
+    <h2><span class="bar"></span>Tensor 形状流</h2>
+    <div class="hint">数据在层间的张量维度变化（CV 算法工程师核心记忆点）</div>
+    <div id="shapes"></div>
+  </div>
+
+  <div class="block">
+    <h2><span class="bar"></span>代码</h2>
+    <div class="hint">可运行的参考实现（PyTorch / transformers）</div>
+    <div class="code-box">
+      <div class="code-bar"><span class="lang" id="lang">PYTHON</span><button class="copy" id="copy">复制</button></div>
+      <pre><code id="code"></code></pre>
+    </div>
+  </div>
+
+  <div class="block" id="points-block">
+    <h2><span class="bar"></span>要点解读</h2>
+    <div class="points" id="points"></div>
+  </div>
+
+  <div id="note"></div>
+
+  <footer>网络架构实验室 · 结构图与代码持续补充中</footer>
+</div>
+
+<script src="assets/js/model-data.js"></script>
+<script src="assets/js/model-detail.js"></script>
+</body>
+</html>

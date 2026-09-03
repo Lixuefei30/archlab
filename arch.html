@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>架构详情 · ArchLab</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<div class="bg-blobs"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+<nav><div class="wrap">
+  <div class="logo">◈ ArchLab</div>
+  <a href="home.html">知识树</a>
+  <a href="evolution.html">演进</a>
+  <a href="index.html">经典网络</a>
+  <a href="faq.html">高频问题</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="detail-hero">
+    <a class="back" href="index.html">← 返回架构库</a>
+    <div id="head"></div>
+  </div>
+
+  <!-- 模型身份证 -->
+  <div class="block">
+    <h2><span class="bar"></span>模型身份证</h2>
+    <div class="hint">一张卡片速记：任务 / 解决问题 / 核心思想 / 输入 / 输出 / 参数量 / FLOPs / 优缺点</div>
+    <div id="idcard"></div>
+  </div>
+
+  <!-- 结构图（上） -->
+  <div class="block">
+    <h2><span class="bar"></span>结构图</h2>
+    <div class="hint">网络整体结构示意（可在此补充 / 替换为你自己的图）</div>
+    <div id="diagram"></div>
+  </div>
+
+  <!-- Tensor 形状流 -->
+  <div class="block">
+    <h2><span class="bar"></span>Tensor 形状流</h2>
+    <div class="hint">数据在层间的张量维度变化（CV 算法工程师核心记忆点）</div>
+    <div id="shapes"></div>
+  </div>
+
+  <!-- 代码（下） -->
+  <div class="block">
+    <h2><span class="bar"></span>代码实现</h2>
+    <div class="hint">默认给出 PyTorch 参考实现，可直接复制使用</div>
+    <div id="code"></div>
+  </div>
+
+  <div id="points"></div>
+
+  <div id="note"></div>
+</div>
+
+<footer>ArchLab · 上图下码，结构图/代码均可在 arch-data.js 中补充</footer>
+
+<script src="assets/js/arch-data.js"></script>
+<script src="assets/js/detail.js"></script>
+</body>
+</html>

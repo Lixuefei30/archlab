@@ -1,0 +1,2 @@
+<!-- ArchLab 套壳首页：用 web-view 加载已部署的静态站 -->
+<web-view src="{{url}}"></web-view>
